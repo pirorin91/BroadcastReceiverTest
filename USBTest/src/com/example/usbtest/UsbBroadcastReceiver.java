@@ -47,9 +47,19 @@ public class UsbBroadcastReceiver extends BroadcastReceiver {
 						Toast.LENGTH_SHORT).show();
 			}
 		} else if (Intent.ACTION_BATTERY_LOW.equals(action)) {
+			Log.d(TAG, "Battery Low tapioka");
 			Toast.makeText(context, "Battery Low tapioka", Toast.LENGTH_SHORT)
 					.show();
+		} else if (Intent.ACTION_CAMERA_BUTTON.equals(action)) {
+			Log.d(TAG, "Camera Button tapioka");
+			Toast.makeText(context, "Camera Button tapioka", Toast.LENGTH_SHORT)
+					.show();
+		} else if (Intent.ACTION_BOOT_COMPLETED.equals(action)) {
+			Log.d(TAG, "Boot complete tapioka");
+			Toast.makeText(context, "Boot complete tapioka", Toast.LENGTH_SHORT)
+					.show();
 		}
+
 	}
 
 }
