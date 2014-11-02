@@ -17,6 +17,9 @@ public class TestBroadcastReceivertest extends BroadcastReceiver {
 		if (Intent.ACTION_BOOT_COMPLETED.equals(action)) {
 			Toast.makeText(context, "Boot completed", Toast.LENGTH_SHORT)
 					.show();
+		} else if (Intent.ACTION_POWER_CONNECTED.equals(action)) {
+			Toast.makeText(context, "Power Connected", Toast.LENGTH_SHORT)
+					.show();
 		}
 	}
 
